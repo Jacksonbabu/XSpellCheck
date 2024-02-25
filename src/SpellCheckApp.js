@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 
+// Define a custom dictionary of words and their corrections
 const customDictionary = {
   teh: "the",
   wrok: "work",
   fot: "for",
-  exampl: "example",
+  exampl: "example"
+  // Add more word-correction pairs as needed
 };
 
-function App() {
+function SpellCheckApp() {
   const [inputText, setInputText] = useState("");
   const [suggestedText, setSuggestedText] = useState("");
 
@@ -50,4 +52,4 @@ function App() {
   );
 }
 
-export default App;
+export default SpellCheckApp;
